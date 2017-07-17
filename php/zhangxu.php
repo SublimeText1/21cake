@@ -15,12 +15,12 @@
             "showOrder": "2"
         },
         {
-            ""id": "130",
+            "id": "130",
             "imgs": "http://static.21cake.com//upload/images/f6c418fd25ed2f8555394c38b173fb42.jpg",
             "showOrder": "3"
         },
         {
-            ""id": "130",
+            "id": "130",
             "imgs": "http://static.21cake.com//upload/images/6d32bce3eebeedd3358372dd0b731980.jpg",
             "showOrder": "4"
         }
