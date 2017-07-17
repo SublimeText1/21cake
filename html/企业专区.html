@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Company</title>
+	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<link rel="stylesheet" href="../css/company.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src = "../js/jquery.validate.min.js"></script>
+	<script src = "../js/messages_zh.min.js"></script>
+</head>
+<body>
+	<div class="company_div">
+
+		<div class="all_div">
+			<!-- 轮播图 -->
+			<div class="company_banner swiper-container">
+				<ul class="image_box swiper-wrapper">
+					<li class="swiper-slide"><a href="#"><img src="../images/企业专区1.jpg" alt=""></a></li>
+					<li class="swiper-slide"><a href="#"><img src="../images/企业专区2.jpg" alt=""></a></li>
+				</ul>
+			</div>
+			<!-- 中间的图片 -->		
+				<img src="../images/企业专区中间.png" alt="" class="center_img">
+				<img src="../images/企业专区礼品卡.png" alt="" class="center_imgs">
+			<!-- 代金卡 -->
+			<a href="gift_card_use.html">
+				<img src="../images/企业专区代金卡.png" alt="" class="gift_card">
+				<img src="../images/企业专区代金卡1.png" alt="" class="gift_cards">
+			</a>
+			<!-- 尊享卡 -->
+			<a href="">
+				<img src="../images/企业专区尊享卡.png" alt="" class="enjoy_card">
+				<img src="../images/企业专区尊享卡1.png" alt="" class="enjoy_cards">
+			</a>
+			<!-- 储值卡 -->
+			<a href="">
+				<img src="../images/企业专区储值卡.png" alt="" class="paid_card">
+				<img src="../images/企业专区储值卡1.png" alt="" class="paid_cards">
+			</a>
+			<!-- 常见用户FAQ -->
+			<div class="answer">
+				<a href="" class="watcher">查看常见用户FAQ >></a>
+			</div>
+			<!-- 企业定制 -->
+			<div class="company_order">
+				<img src="../images/企业定制.png" alt="">
+				<a href="">
+					<img src="../images/企业定制1.png" alt="">
+				</a>
+			</div>
+			<!-- 如何购买 -->
+			<div class="how_pay">
+				<img src="../images/如何购买.png" alt="" class="pay_picture">
+				<div>北京</div>
+				<p id="contact">
+					联系电话：010-65503218
+				</p>
+				<p>联系邮箱：qiye@21cake.com</p>
+			</div>
+			<!-- 留言 -->
+			<div class="blog">
+				<img src="../images/企业专区留言.png" class="blog_img">
+				
+				<ul>
+					<form action="" id="sure">
+					<li><input type="text" name="companyName" placeholder="公司名称(必填)"></li>
+					<li><input type="text" name="contacts" placeholder="联系人(必填)"></li>
+					<li><input type="tel" name="mobile" placeholder="手机号(必填)" pattern="^1[34578]\d{9}$"></li>
+					<li><input type="text" name="eml" placeholder="邮箱"></li>
+					<li><textarea type="text" name="leavMessage" placeholder="留言(必填)"></textarea></li>
+				</ul>
+				<button type="submit">提交</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src = "../js/company.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			loop:true
+		});
+	</script>
+</body>
+</html>

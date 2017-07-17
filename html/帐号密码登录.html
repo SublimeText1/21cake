@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src = "../js/vue.js"></script>
+	<script src = "../js/vue.js"></script>
+	<link rel="stylesheet" href="../css/personal.css">
+</head>
+<body>
+	<!-- 登录选项 -->
+	<form action="">
+		<div class="together">
+			<div id="app">
+				<div>
+					<router-link to="/number" class="number">帐号密码登录</router-link>
+					<a href="phonecode.html"><router-link to="/phone" class="phone">手机验证码登录</router-link></a>
+				</div>
+				<router-view></router-view>
+			</div>
+			<!-- 输入框和密码框 -->
+			<div class="input">
+				<input type="text" placeholder="用户名/邮箱地址" class="user">
+				<input type="password" placeholder="填写密码" class="pwd">
+			</div>
+			<!-- 登录 -->
+			<div class="footer">
+				<input type="submit" value="登录" class="login">
+			</div>
+			<!-- 记住密码 -->
+			<div class="remember">
+				<input type="checkbox">记住帐号
+				<a href="">去注册</a>
+				<a href="">忘记密码</a>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
