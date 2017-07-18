@@ -1,0 +1,19 @@
+div{
+	font-size: 12px;
+}
+.business-process-list{
+	margin: 0 28px;
+}
+.business-process-list h2 {
+	font-size: 18px;
+	text-align: center;
+	color: #73472E;
+	line-height: 25px;
+	margin-top: 15px;
+	margin-bottom: 18px;
+}
+.business-process-list p {
+	margin: 15px 0;
+	line-height: 18px;
+	color: #C69C6D;
+}
