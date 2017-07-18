@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src = "../js/vue.js"></script>
+	<script src = "../js/vue.js"></script>
+	<link rel="stylesheet" href="../css/phonecode.css">
+</head>
+<body>
+	<!-- 登录选项 -->
+	<form action="">
+		<div class="together">
+			<div id="app">
+				<div>
+					<a href="personal.html"><router-link to="/number" class="number">帐号密码登录</router-link></a>
+					<router-link to="/phone" class="phone">手机验证码登录</router-link>
+				</div>
+			</div>
+			<!-- 输入手机号还有验证码 -->
+			<ul class="input">
+				<li><input type="tel" placeholder="手机号" class="user"></li>
+				<li><input type="text" placeholder="请输入图片字符" class="pwd"><div id="login" onclick="show()"></div></li>
+				<li><input type="text" placeholder="输入手机验证码" class="pwd"><input type="button" value="点击获取验证码" id="sure" onclick="fun(this)"></li>
+			</ul>
+			<!-- 登录 -->
+			<div class="footer">
+				<input type="submit" value="登录" class="login">
+			</div>
+			<div class="remember">
+				<input type="checkbox">记住帐号
+				<a href="">去注册</a>
+				<a href="">忘记密码</a>
+			</div>
+		</div>
+	</form>
+	<script src="../js/phonecode.js"></script>
+	<script src="../js/code.js"></script>
+</body>
+</html>
+						

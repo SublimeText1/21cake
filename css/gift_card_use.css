@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border:none;
+	outline: none;
+	-webkit-appearance:none;
+}
+img{
+	display: block;
+}
+ul,ol{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.business-process-list{
+	margin: 0 28px;
+}
+.business-process-list>h2{
+	font-size: 18px;
+	text-align: center;
+	color: #73472E;
+	line-height: 25px;
+	margin-top: 15px;
+	margin-bottom: 18px;
+}
+.business-process-list span {
+	color: #C69C6D;
+	display: block;
+	text-align: center;
+	line-height: 16px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+.business-process-list img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 45px;
+}
