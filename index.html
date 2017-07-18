@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>24</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	 <link rel="stylesheet" href="css/swiper.min.css">
+	 <link rel="stylesheet" href="css/index.css">
+	 <link rel="stylesheet" type="text/css" href="js/swiper.min.js">
+	  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div class="cake  swiper-container" >
+			<ul class="image_box  swiper-wrapper" id="slider_box">
+			</ul>
+			<div class="swiper-pagination"></div>
+	</div>
+	<div class="home-menu">
+			<a href="">
+				<img src="images/Recommend.jpg" >
+				<span>推荐</span>
+			</a>
+			<a href="">
+				<img src="images/Birthday_zone.jpg" >
+				<span>生日专区</span>
+			</a>
+			<a href="">
+				<img src="images/cake.png" >
+				<span>蛋糕</span>
+			</a>
+			<a href="">
+				<img src="images/tea.png" >
+				<span>下午茶</span>
+			</a>
+			<a href="">
+				<img src="images/Designer.png" >
+				<span >设计师礼品</span>
+			</a>
+	</div>
+	<ul class="food">
+	    <li><img src="images/Season_star.jpg" alt=""></li>
+	    <li><img src="images/Classic.jpg" alt=""></li>
+	    <li><img src="images/Ingredients_taste.jpg" alt=""></li>
+	    <li><img src="images/Ingredients_brigade.jpg" alt=""></li>
+		<li><img src="images/Designer_money.jpg" alt=""></li>
+	</ul>
+
+
+
+
+	 <script src="js/swiper.min.js"></script>
+	   <script >
+	   function setSlider(){
+	   	var swiper = new Swiper('.swiper-container', {
+	    loop:true,
+	    pagination: '.swiper-pagination',
+        paginationClickable: true,
+        // autoplay: 1000
+	    });
+	   }
+
+
+	    $.ajax({
+        url:"php/zhangxu.php?type=home_slider",
+        type:"get",
+        success:function(data){
+            var obj=JSON.parse(data).data;
+            console.log(obj);
+            for(var i = 0; i < obj.length;i++){
+                var li = $('<li></li>');
+                li.addClass('swiper-slide')
+                var img =$("<img src='' alt=''>");
+                img.attr("src",obj[i].imgs);
+                li.append(img)
+                $("#slider_box").append(li)
+            }
+            setSlider();
+        }
+    })
+</script>
+
+</body>
+
+</html>
