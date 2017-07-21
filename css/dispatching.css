@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border:none;
+	outline: none;
+}
+img{
+	display: block;
+}
+ul,ol{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.dispatching_box{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.dispatching_picture{
+	width: 100%;
+}
+.top_picture{
+	width: 100%;
+}
+.order{
+	background-color: #fff;
+}
+.order_detail{
+	margin: 0 20px 0 5px;
+	overflow: hidden;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+.order_detail li{
+	width: 50%;
+	float: left;
+	margin-bottom: 10px;
+}
+.left_detail{
+	margin-left: 15px;
+}
+.detail_img{
+	height: 176px;
+}
+.left_detail img{
+	width: 100%;
+}
+.left_detail p{
+	line-height: 16px;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	width: 100%;
+}
+.left_detail button{
+	width: 100px;
+	height: 25px;
+	border: 1px solid #66402B;
+	background: none;
+	display: block;
+	margin: 8px auto 0;
+}
+p{
+	margin: 1em 0;
+	font-size: 12px;
+	color: #442818;
+}
+/*订购数量*/
+.order_buy,.order_buy_two,.order_buy_three{
+	width: 100px;
+	height: 25px;
+	background: none;
+	display: none;
+	margin: 8px auto 0;
+}
+.text_box,.text_box_two,.text_box_three{
+	width: 33px;
+	height: 25px;
+	display: inline-block;
+	line-height: 25px;
+	text-align: center;
+	border: 0;
+	padding: 0;
+}
+.min,.min_two,.min_three{
+	height: 25px;
+	width: 25px;
+	border: 1px solid #66402B;
+	background: none;
+	font-size: 15px;
+	font-weight: bold;
+}
+.add{
+	height: 25px;
+	width: 25px;
+	border: none;
+	background-color: rgb(102,64,43);
+	font-weight: bold;
+	color: white;
+	font-size: 15px;
+}
+.place-order-bottom {
+	height: 44px;
+	overflow: hidden;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000000;
+	box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.place-order-bottom .place-order-but {
+	display: block;
+	float: right;
+	height: 44px;
+	width: 96px;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	background: #442818;
+	font-size: 14px;
+	border: none;
+}
+.place-order-bottom .pay-money {
+	float: right;
+	margin-right: 12px;
+}
+.place-order-bottom .pay-money > div span:first-child {
+	margin-top: 5px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 16px;
+}
+.place-order-bottom .pay-money > div span:last-child {
+	display: block;
+	color: #707070;
+	font-size: 10px;
+	line-height: 16px;
+}
+.place-order-bottom .pay-money .pay-money-plus {
+	line-height: 24px;
+	margin: 0 8px;
+	font-size: 16px;
+}
+.place-order-bottom .pay-money > div {
+	float: left;
+	height: 44px;
+	text-align: right;
+}
