@@ -85,16 +85,74 @@ ul,ol{
 #Specifications>div{
 	display: inline-block;
 }
-#Specifications .l2 img{
+#Specifications .cations1 img{
 	margin-left:228px;	
 	height:15px;
 	width:15px;
 	margin-top:16px;
 }
-#Specifications .l1{
+#Specifications .cations{
 	font-size: 13px;
 	margin-top:5px;
 	width:80px;
 }
+#Reference_resources .pink{
+	height:8px;
+	background-color:rgb(246,246,246);
+}
+.Sweetness{
+	display: flex;
+	margin-left:30px;
+}
+.Sweetness>li{
+	list-style-type:none;
+}
+.Sweetness>li>img{
+	width:18px;
+	height:18px;
+	margin-left:10px;
+	margin-top:14px;
+}
+.Distribution{
+	margin-left:38px;
+	margin-top: 10px;
+}
+.Distribution>img{
+	width:18px;
+	height:18px;
+}
+.night{
+	margin-left:130px;
+}
+#In_this_world{
+	margin-top:13px;
+}
+ #In_this_world .pink1{
+	height:8px;
+	background-color:rgb(246,246,246);
+}
+#In_this_world .Written_words{
+	margin-left:19px;
+	font-size: 13px;
+	padding-top: 15px;
+}
+.Chocolate{
+	width:100%;
+}
+.Chocolate>li>img{
+	width:100%;
+}
+.Explain{
+	background-color: rgb(246,246,246);
+	height:76px;
+	text-align: center;
+	font-size: 19px;
+}
+.Explain>span{
+	margin-top: 1px;
+}
 
-    
+
+
+
+
