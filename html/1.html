@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/1.css">
+	<style>
+
+	</style>
+</head>
+<body>
+
+	<div class="order">
+			<ul class="order_detail">
+			<!-- 第一个 -->
+				<li>
+					<div class="left_detail">
+						<a href="Brazil_coffee.html">
+							<div class="detail_img">
+								<img src="../images/order_left.jpg" alt="">
+							</div>
+							<p>巴西喜拉多咖啡2盒</p>
+							<p style="color: #bb9772;">￥200.00/份</p>
+						</a>
+						<button class="order_button" onclick="order_sure()">订购</button>
+						<div class="order_buy">
+							<input class="min" type="button" value="-">
+							<input class="text_box" type="text" value="0">
+							<input class="add" type="button" value="+">
+						</div>
+					</div>
+				</li>
+			<!-- 第二个 -->
+				<li>
+					<div class="left_detail">
+						<a href="Brazil_coffee.html">
+							<div class="detail_img">
+								<img src="../images/order_left.jpg" alt="">
+							</div>
+							<p>耶加雪啡咖啡2盒</p>
+							<p style="color: #bb9772;">￥200.00/份</p>
+						</a>
+						<button class="order_button1" onclick="order_sure2()">订购</button>
+						<div class="order_buy">
+							<input class="min" type="button" value="-">
+							<input class="text_box" type="text" value="0">
+							<input class="add" type="button" value="+">
+						</div>
+					</div>
+				</li>
+				<!-- 第三个 -->
+				<li>
+					<div class="left_detail">
+						<a href="Brazil_coffee.html">
+							<div class="detail_img">
+								<img src="../images/order_left.jpg" alt="">
+							</div>
+							<p>耶加雪啡咖啡2盒</p>
+							<p style="color: #bb9772;">￥200.00/份</p>
+						</a>
+						<button class="order_button1" onclick="order_sure2()">订购</button>
+						<div class="order_buy">
+							<input class="min" type="button" value="-">
+							<input class="text_box" type="text" value="0">
+							<input class="add" type="button" value="+">
+						</div>
+					</div>
+				</li>
+				<div class="place-order-bottom">
+					<a href="#" class="place-order-but">去结算</a>
+					<div class="pay-money">
+						<div>¥
+							<span id="total">0.00</span>
+							<span>商品</span>
+						</div>
+						<div class="pay-money-plus">+</div>
+						<div>¥
+							<span>0.00</span>
+							<span>配送费</span>
+						</div>
+					</div>
+				</div>
+	<script>
+	$(function(){ 
+		$(".add").click(function(){ 
+			var t=$(this).parent().find('input[class*=text_box]'); 
+			t.val(parseInt(t.val())+1) 
+		setTotal(); 
+	}) 
+	$(".min").click(function(){ 
+		var t=$(this).parent().find('input[class*=text_box]'); 
+		t.val(parseInt(t.val())-1) 
+			if(parseInt(t.val())<0){ 
+				t.val(0); 
+			} 
+		setTotal(); 
+	}) 
+	function setTotal(){ 
+	var s=0; 
+	$(".order_buy").each(function(){ 
+		s += parseInt($(this).find('input[class*=text_box]').val())*200; 
+	}); 
+	$("#total").html(s.toFixed(2)); 
+	} 
+	setTotal(); 
+
+	}) 
+	
+	var or = true;
+function order_sure(){
+	var t = $("#text_box");
+	if (or){
+		$(".order_button").css("display","none");
+		$(".order_buy").css("display","block");
+		t.val(parseInt(t.val())+1);
+		
+	}
+}
+function order_sure2(){
+	var t = $("#text_box");
+	if (or){
+		$(".order_button1").css("display","none");
+		$(".order_buy").css("display","block");
+		t.val(parseInt(t.val())+1);
+		
+	}
+}
+</script>
+</body>
+</html>
