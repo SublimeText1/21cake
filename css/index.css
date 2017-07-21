@@ -76,8 +76,9 @@ ul,ol{
 .food{
 	width: 100%;
 }
-.food>li>img{
+.food>li>a>img{
 	width:100%;
 }
+
 
 
