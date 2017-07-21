@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>推荐</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/recommend.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../js/base.js"></script>
+</head>
+<body>
+	<div id="all">
+	  <div id="cake_box">
+		<header>
+			<div id="cake_top">
+				<ul id="header_top">
+					<li class="top_city"><img onclick="fun(this)" src="../images/top.png"></li>
+
+					<li class="top_city"><img src="../images/back.png"></li>
+					<li  onclick="fun2()">
+						<img src="../images/address.png" class="city"><span id="show">上海</span>
+						</li>
+					<li id="top_address"><img  src="../images/cart.png" class="address"></li>
+				</ul>
+			</div>
+			<div id="cake_meau">
+				<ul id="header_bottom">
+					<li><img src="../images/home.png" alt=""> <br>首页</li>
+					<li><img src="../images/menu.png" alt=""><br>分类</li>
+					<li><img src="../images/person.png" alt=""><br>个人</li>
+				</ul>
+			</div>
+		</header>
+	<div id="recommend_box">
+			<div id="header_box">
+				<img src="../images/recommend.1.jpg" alt="">
+			</div>
+			<!-- 第一部分 -->
+			<div id="first_part">
+			<img src="../images/recommend.2.png" alt="">
+				<div class="collocation">搭配组合</div>		
+				<div class="combining">
+					<div>
+						<img src="../images/match1.jpg" alt="">		
+						<p><input type="checkbox" checked="">&yen;45.00</p>
+					</div>
+					<div>
+						<img src="../images/match2.jpg" alt="">			
+						<p><input type="checkbox">&yen;45.00</p>
+					</div>
+					<div>
+						<img src="../images/match3.jpg" alt="">			
+						<p><input type="checkbox">&yen;65.00</p>
+					</div>
+					<div>
+						<img src="../images/match4.jpg" alt="">			
+						<p><input type="checkbox">&yen;100.00</p>
+					</div>
+				</div>
+				<div class="combination_price">
+						<div class="price_left"><span>组合价：</span>&yen;298.00-750.00</div>
+						<div class="price_right"> <img src="../images/chat_add.png" alt=""></div>
+					</div>
+			</div>
+
+			<!-- 第二部分 -->
+			<div id="second_part">
+			<img src="../images/recommend.3.png" alt="">
+				<div class="collocation">搭配组合</div>		
+				<div class="combining">
+					<div>
+						<img src="../images/match1.jpg" alt="">		
+						<p><input type="checkbox" checked="">&yen;45.00</p>
+					</div>
+					<div>
+						<img src="../images/match2.jpg" alt="">			
+						<p><input type="checkbox">&yen;45.00</p>
+					</div>
+					<div>
+						<img src="../images/match3.jpg" alt="">			
+						<p><input type="checkbox">&yen;65.00</p>
+					</div>
+					<div>
+						<img src="../images/match4.jpg" alt="">			
+						<p><input type="checkbox">&yen;100.00</p>
+					</div>
+				</div>
+				<div class="combination_price">
+						<div class="price_left"><span>组合价：</span>&yen;298.00-750.00</div>
+						<div class="price_right"> <img src="../images/chat_add.png" alt=""></div>
+					</div>
+			</div>
+				<!-- 第三部分 -->
+
+			<div id="third_part">
+				<img src="../images/recommend.4.png" alt="">
+				<div class="collocation">搭配组合</div>		
+				<div class="combining">
+					<div>
+						<img src="../images/match1.jpg" alt="">		
+						<p><input type="checkbox" checked="">&yen;45.00</p>
+					</div>
+					<div>
+						<img src="../images/match2.jpg" alt="">			
+						<p><input type="checkbox">&yen;45.00</p>
+					</div>
+					<div>
+						<img src="../images/match3.jpg" alt="">			
+						<p><input type="checkbox">&yen;65.00</p>
+					</div>
+					<div>
+						<img src="../images/match4.jpg" alt="">			
+						<p><input type="checkbox">&yen;100.00</p>
+					</div>
+				</div>
+				<div class="combination_price">
+						<div class="price_left"><span>组合价：</span>&yen;358.00-958.00</div>
+						<div class="price_right"> <img src="../images/chat_add.png" alt=""></div>
+					</div>
+			</div>
+			<!-- 第四部分 -->
+			<div id="fourth_part">
+				<img src="../images/recommend.5.png" alt="">
+				<div class="collocation">搭配组合</div>		
+				<div class="combining">
+					<div>
+						<img src="../images/match1.jpg" alt="">		
+						<p><input type="checkbox" checked="">&yen;45.00</p>
+					</div>
+					<div>
+						<img src="../images/match2.jpg" alt="">			
+						<p><input type="checkbox">&yen;45.00</p>
+					</div>
+					<div>
+						<img src="../images/match3.jpg" alt="">			
+						<p><input type="checkbox">&yen;65.00</p>
+					</div>
+					<div>
+						<img src="../images/match4.jpg" alt="">			
+						<p><input type="checkbox">&yen;100.00</p>
+					</div>
+				</div>
+
+				<div class="combination_price">
+						<div class="price_left"><span>组合价：</span>&yen;398.00-958.00</div>
+						<div class="price_right"> <img src="../images/chat_add.png" alt=""></div>
+				</div>
+			</div>
+					<!-- 弹出框  -->
+			<div id="cart_box">
+				<div id="add_cart">
+					<p id="cart_price">组合价：&yen;<span class="money">443.00</span></p>
+					<div id="cart_top">
+						<div><img src="../images/cart1.png" alt=""> <span class="bulk">17*17cm</span></div>
+						<div><img src="../images/cart2.png" alt=""> <span class="person">适合7-8人分享</span></div>
+					</div>
+					<div id="cart_bottom">
+						<div><img src="../images/cart3.png" alt=""> <span class="tableware">含10套餐具</span></div>
+						<div><img src="../images/cart4.png" alt=""> <span class="booking">须提前5小时预订</span></div>
+					</div>
+					<div id="price_small"><img src="../images/small.jpg" alt="" id="small"></div>
+					<ul id="cake_size">
+						<li class=" two_word">2.0磅</li>
+						<li class=" five_word">5.0磅</li>
+						<li class=" three_word">3.0磅</li>
+					</ul>
+				</div>
+					<p id="cart_sure">确定</p>
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<footer>
+			<ul id="footer_bottom">
+				<li>下载APP</li>
+				<li>联系我们</li>
+				<li>全部功告</li>
+			</ul>
+			<p>Copyrigh&copy;蛋糕官网商城 2007-2017,<br>
+			版本所有京ICP备14006254号-1 <br>
+			网站注册名称：北京廿一客食品有限公司
+			</p>
+		</footer>
+		</div>
+		<!--选择城市弹出框 -->
+		<div id="select_city">
+				<div id="word">选择城市</div>
+				<br>
+				<div id="city_top">
+					<p onclick="city(this)" class="city_first">上海</p>			
+					<p onclick="city(this)">北京</p>
+					<p onclick="city(this)">天津</p>
+					<p onclick="city(this)">杭州</p>
+				</div>
+				<div id="city_bottom">
+					<p onclick="city(this)">无锡</p>
+					<p onclick="city(this)">苏州</p>
+					<p onclick="city(this)">广州</p>
+					<p onclick="city(this)">深圳</p>
+				</div>
+				<div id="sure">确定 </div>
+				<div class="switch">*切换城市将清空购物车</div>
+		</div>
+		</div>
+		<script>
+			var cart = $(".price_right");
+			var box =$("#cart_box");
+			cart.click(function(){
+				box.css("display","block");
+			})
+			var price=$(".money");
+			var five = $(".five_word");
+			var three = $(".three_word");
+			var two = $(".two_word");
+			var img = $("#small");
+			var bulk =  $(".bulk");
+			var person =  $(".person");
+			var tableware =  $(".tableware");
+			var booking =  $(".booking");
+
+			two.click(function(){
+				two.css("border","none");
+				three.css("border","none");
+				five.css("border","none");
+				two.css("border","1px solid rgb(0,0,0)");
+				img.attr("src","../images/small.jpg");
+				price.text("443.00");
+				bulk.text("17*17");
+				person.text("适合7-8人分享");
+				tableware.text("含10套餐具");
+				booking.text("须提前5小时预订");
+			})
+
+			five.click(function(){
+				five.css("border","1px solid rgb(0,0,0)");
+				two.css("border","none");
+				three.css("border","none");
+				img.attr("src","../images/big.jpg");
+				price.text("1,003.00");
+				bulk.text("30*30");
+				person.text("适合15-20人分享");
+				tableware.text("含20套餐具");
+				booking.text("须提前24小时预订");
+			})
+
+			three.click(function(){
+				three.css("border","1px solid rgb(0,0,0)");
+				two.css("border","none");
+				five.css("border","none");
+				img.attr("src","../images/middle.jpg");
+				price.text("643.00");
+				bulk.text("23*23");
+				person.text("适合11-15人分享");
+				tableware.text("含15套餐具");
+				booking.text("须提前5小时预订");
+			})
+		</script>	
+</body>
+</html>
