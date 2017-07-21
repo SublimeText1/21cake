@@ -133,7 +133,7 @@ p{
 	line-height: 44px;
 	text-align: center;
 	color: #fff;
-	background: #442818;
+	background: #BFBFBF;
 	font-size: 14px;
 	border: none;
 }
@@ -163,4 +163,7 @@ p{
 	float: left;
 	height: 44px;
 	text-align: right;
+}
+.place-order-bottom .pay-money > div > span{
+	color: #442818;
 }

@@ -1,32 +1,47 @@
-$(function(){ 
-	$(".add").click(function(){ 
+	$(function(){ 
+		$(".add").click(function(){ 
+				var t=$(this).parent().find('input[class*=text_box]'); 
+				t.val(parseInt(t.val())+1) 
+			setTotal(); 
+		}) 
+		$("#order_button").click(function(){ 
+				var t=$(this).parent().find('input[class*=text_box]'); 
+				t.val(parseInt(t.val())+1) 
+			setTotal(); 
+		}) 
+		$("#order_button_two").click(function(){ 
+				var t=$(this).parent().find('input[class*=text_box]'); 
+				t.val(parseInt(t.val())+1) 
+			setTotal(); 
+		})
+		$("#order_button_three").click(function(){ 
+				var t=$(this).parent().find('input[class*=text_box]'); 
+				t.val(parseInt(t.val())+1) 
+			setTotal(); 
+		})
+		$(".min").click(function(){ 
 			var t=$(this).parent().find('input[class*=text_box]'); 
-			t.val(parseInt(t.val())+1) 
-		setTotal(); 
-	}) 
-	$(".min").click(function(){ 
-		var t=$(this).parent().find('input[class*=text_box]'); 
-		t.val(parseInt(t.val())-1) 
-			if(parseInt(t.val())<0){ 
-				t.val(0); 
-			} 
-		setTotal(); 
-	}) 
-	$(".min_two").click(function(){ 
-		var t=$(this).parent().find('input[class*=text_box]'); 
-		t.val(parseInt(t.val())-1) 
-			if(parseInt(t.val())<0){ 
-				t.val(0); 
-			} 
-		setTotal(); 
-	})
-	$(".min_three").click(function(){ 
-		var t=$(this).parent().find('input[class*=text_box]'); 
-		t.val(parseInt(t.val())-1) 
-			if(parseInt(t.val())<0){ 
-				t.val(0); 
-			} 
-		setTotal(); 
+			t.val(parseInt(t.val())-1) 
+				if(parseInt(t.val())<0){ 
+					t.val(0); 
+				} 
+			setTotal(); 
+		}) 
+		$(".min_two").click(function(){ 
+			var t=$(this).parent().find('input[class*=text_box]'); 
+			t.val(parseInt(t.val())-1) 
+				if(parseInt(t.val())<0){ 
+					t.val(0); 
+				} 
+			setTotal(); 
+		})
+		$(".min_three").click(function(){ 
+			var t=$(this).parent().find('input[class*=text_box]'); 
+			t.val(parseInt(t.val())-1) 
+				if(parseInt(t.val())<0){ 
+					t.val(0); 
+				} 
+			setTotal(); 
 	})
 
 
@@ -48,30 +63,28 @@ $(function(){
 	
 	var or = true;
 	function order_sure(){
-	var t = $("#text_box");
+	var t = $(".text_box");
 	if (or){
 		$("#order_button").css("display","none");
 		$(".order_buy").css("display","block");
-		t.val(parseInt(t.val())+1);	
+		$(".place-order-but").css("background-color","#442818");
 		}
 	}
 	function order_sure_two(){
-		var t = $("#text_box");
+		var t = $(".text_box_two");
 		if (or){
 			$("#order_button_two").css("display","none");
-			$(".order_buy_two").css("display","block");
-			t.val(parseInt(t.val())+1);
-			
+			$(".order_buy_two").css("display","block");	
+			$(".place-order-but").css("background-color","#442818");		
 		}
 	}
 
 	function order_sure_three(){
-		var t = $("#text_box");
+		var t = $(".text_box_three");
 		if (or){
 			$("#order_button_three").css("display","none");
 			$(".order_buy_three").css("display","block");
-			t.val(parseInt(t.val())+1);
-			
+			$(".place-order-but").css("background-color","#442818");
 		}
 	}
 
