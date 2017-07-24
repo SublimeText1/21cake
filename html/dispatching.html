@@ -5,11 +5,33 @@
 	<title>全国配送</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../css/dispatching.css">
+	<link rel="stylesheet" href="../css/base.css">
 	<script src="../js/jquery-3.1.1.min.js"></script>
 	<script src="../js/dispatching.js"></script>
+	<script type="text/javascript" src = "../js/base.js"></script>
 </head>
 <body>
 	<div class="dispatching_box">
+		<header>
+			<div id="cake_top">
+				<ul id="header_top">
+					<li class="top_city"><img onclick="fun(this)" src="../images/top.png"></li>
+
+					<li class="top_city"><img src="../images/back.png"></li>
+					<li  onclick="fun2()">
+						<img src="../images/address.png" class="city"><span id="show">上海</span>
+						</li>
+					<li id="top_address"><img  src="../images/cart.png" class="address"></li>
+				</ul>
+			</div>
+			<div id="cake_meau">
+				<ul id="header_bottom">
+					<li><img src="../images/home.png" alt="">首页</li>
+					<li><img src="../images/menu.png" alt="">分类</li>
+					<li><img src="../images/person.png" alt="">个人</li>
+				</ul>
+			</div>
+		</header>
 		<div class="dispatching_picture">
 			<img src="../images/dispatching.jpg" alt="" class="top_picture">
 		</div>
@@ -85,6 +107,38 @@
 					<span>配送费</span>
 				</div>
 			</div>
+		</div>
+		<footer>
+		<!-- <div>46546411566</div> -->
+			<ul id="footer_bottom">
+				<li>下载APP</li>
+				<li>联系我们</li>
+				<li>全站公告</li>
+			</ul>
+			<p>Copyrigh&copy;蛋糕官网商城 2007-2017,<br>
+			版本所有京ICP备14006254号-1 <br>
+			网站注册名称：北京廿一客食品有限公司
+			</p>
+		</footer>
+		</div>
+		<div id="select_city">
+				<div id="word">选择城市</div>
+				<br>
+				<div id="city_top">
+					<p onclick="city(this)" class="city_first">上海</p>			
+					<p onclick="city(this)">北京</p>
+					<p onclick="city(this)">天津</p>
+					<p onclick="city(this)">杭州</p>
+				</div>
+				<div id="city_bottom">
+					<p onclick="city(this)">无锡</p>
+					<p onclick="city(this)">苏州</p>
+					<p onclick="city(this)">广州</p>
+					<p onclick="city(this)">深圳</p>
+				</div>
+				<div id="sure">确定 </div>
+				<div class="switch">*切换城市将清空购物车</div>
+		</div>
 		</div>
 	</div>
 </body>

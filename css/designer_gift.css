@@ -17,11 +17,9 @@ a{
 a:hover{
 	text-decoration: none;
 }
-/*input{
-	border:none;
-	outline: none;
-	-webkit-appearance:none;
-}*/
+div{
+	font-size: 12px;
+}
 ul,ol{
 	list-style: none;
 }
@@ -81,8 +79,7 @@ header #header_top,header #header_bottom{
 	width: 33.33%;
 	text-align: center;
 	padding-left:10px;
-    float: left;
-    /*border: 1px solid red;*/
+	float: left;
 }
 #header_top .top_city{
 	width: 80%;
@@ -126,7 +123,6 @@ header #cake_meau{
 #cake_meau img{
 	width: 20px;
 	height: 20px;
-	margin-left: 45px;
 }
  /*弹出框*/
 #select_city {
@@ -185,6 +181,105 @@ header #cake_meau{
 .city_first{
 	border: 1px solid rgb(68,40,24);
 }
+/*主体*/
+.list-pro-box{
+	margin-top: 53px;
+}
+.pro-list-title {
+    text-align: center;
+}
+.list-pro-box h2 {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 15px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 15px;
+    background: rgba(213,191,167,0.10);
+    border-bottom: 1px solid #E9E9E9;
+}
+.list-pro-box h2 span {
+    font-size: 10px;
+    display: block;
+    line-height: 13px;
+    margin-top: 2px;
+    color: #D5BFA7;
+}
+.list-pro-box>div.list-box {
+    padding-left: 5px;
+    padding-right: 20px;
+}
+.list-pro-box ul {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.list-pro-box li {
+    width: 50%;
+    float: left;
+}
+.list-pro-box li>div {
+    padding-left: 15px;
+}
+.list-pro-box li .list-pro-content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.list-pro-box li a {
+    display: block;
+    overflow: hidden;
+}
+.list-pro-box li .list-pro-content .list-pro-img {
+    width: 100%;
+}
+.list-pro-box .list-pro-content h3 {
+    font-size: 13px;
+    line-height: 1.2em;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.list-pro-box li .list-pro-content img {
+    width: 100%;
+}
+.list-pro-box .list-pro-content h3 span {
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.list-pro-box .list-pro-content span.price {
+    color: #BB9772;
+    display: block;
+    margin-top: 5px;
+}
+.list-pro-box .list-pro-content .label {
+    position: absolute;
+    bottom: 68px;
+    left: 0;
+}
+.list-pro-box .list-pro-content .cart-add {
+    display: block;
+    width: 24%;
+    padding: 5%;
+    position: absolute;
+    padding-top: 20px;
+    right: 0;
+    bottom: -3%;
+}
+.lost-bottom {
+    height: 72px;
+    margin: 25px 20px 0;
+    padding-right: 40px;
+    background: url(../images/none.png) no-repeat right center;
+    background-size: 34px 38px;
+    text-align: right;
+    line-height: 72px;
+    color: #D5D5D5;
+}
 /*表尾*/
 footer{
 	width: 100%;
@@ -195,6 +290,7 @@ footer{
 	text-align: center;
 	background: rgb(65,65,65);
 	color: rgb(160,160,160);
+	margin-top: 10px;
 }
  footer #footer_bottom{
 	display: flex;

@@ -33,6 +33,9 @@ ul,ol{
 .second_box{
 	margin-top: 15px;
 }
+.sign_up_word{
+	margin-top: 50px;
+}
 .sign_up_word>p{
 	color: #442818;
 	text-align: center;
@@ -76,7 +79,7 @@ ul,ol{
 	color: #974b00;
 	display: inline-block;
 }
-#sure{
+#sure1{
 	width: 10em;
 	line-height: 0.4em;
 	background-color: rgb(68,40,24);

@@ -4,9 +4,33 @@
 	<meta charset="UTF-8">
 	<title>用户FAQ</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/base.css">
+	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../js/base.js"></script>
 	<link rel="stylesheet" href="../css/FAQ.css">
 </head>
 <body>
+	<div id="all">
+		<header>
+			<div id="cake_top">
+				<ul id="header_top">
+					<li class="top_city"><img onclick="fun(this)" src="../images/top.png"></li>
+
+					<li class="top_city"><img src="../images/back.png"></li>
+					<li  onclick="fun2()">
+						<img src="../images/address.png" class="city"><span id="show">上海</span>
+						</li>
+					<li id="top_address"><img  src="../images/cart.png" class="address"></li>
+				</ul>
+			</div>
+			<div id="cake_meau">
+				<ul id="header_bottom">
+					<li><img src="../images/home.png" alt="" style="margin-left: 5px;"> <br>首页</li>
+					<li><img src="../images/menu.png" alt="" style="margin-left: 5px;"><br>分类</li>
+					<li><img src="../images/person.png" alt="" style="margin-left: 5px;"><br>个人</li>
+				</ul>
+			</div>
+		</header>
 	<div class="business-process-list">
 		<h2>用户常见FAQ</h2>
 		<p>Q1. 发票问题：<br>
@@ -20,6 +44,25 @@
 		</p><p>Q4：卡券过期问题：<br>
 		A：如果到期后，您未使用或未刮开，可以联系我们的客服或销售人员进行换卡。
 		</p>
+	</div>
+		<div id="select_city">
+				<div id="word">选择城市</div>
+				<br>
+				<div id="city_top">
+					<p onclick="city(this)" class="city_first">上海</p>			
+					<p onclick="city(this)">北京</p>
+					<p onclick="city(this)">天津</p>
+					<p onclick="city(this)">杭州</p>
+				</div>
+				<div id="city_bottom">
+					<p onclick="city(this)">无锡</p>
+					<p onclick="city(this)">苏州</p>
+					<p onclick="city(this)">广州</p>
+					<p onclick="city(this)">深圳</p>
+				</div>
+				<div id="sure">确定 </div>
+				<div class="switch">*切换城市将清空购物车</div>
+		</div>
 	</div>
 </body>
 </html>

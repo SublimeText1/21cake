@@ -35,6 +35,9 @@ ul,ol{
 	margin-top: 20px;
 	margin-bottom: 50px;
 }
+#app>div{
+	margin-top: 50px;
+}
 .number{
 	width: 50%;
 	border-bottom: 1px solid black;
