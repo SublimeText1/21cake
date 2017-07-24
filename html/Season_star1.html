@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/Season_star1.css">
+	<link rel="stylesheet" type="text/css" href="">
+	<script src = "../js/vue.js"></script>
+	<script src = "../js/vue-router.js"></script>
+	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../js/base.js"></script>
+	<script type="text/javascript" src = "../js/cake_cart.js"></script>
+
+</head>
+<body>
+	<div id="box">
+		<div id="all">
+	  <div id="cake_box">
+		<header>
+			<div id="cake_top">
+				<ul id="header_top">
+					<li class="top_city"><img onclick="fun(this)" src="../images/top.png"></li>
+
+					<li class="top_city"><img src="../images/back.png"></li>
+					<li  onclick="fun2()">
+						<img src="../images/address.png" class="city"><span id="show">上海</span>
+						</li>
+					<li id="top_address"><img  src="../images/cart.png" class="address"></li>
+				</ul>
+			</div>
+			<div id="cake_meau">
+				<ul id="header_bottom">
+					<li><img src="../images/home.png" alt=""> <br>首页</li>
+					<li><img src="../images/menu.png" alt=""><br>分类</li>
+					<li><img src="../images/person.png" alt=""><br>个人</li>
+				</ul>
+			</div>
+		</header>
+		<div id="select_city">
+				<div id="word">选择城市</div>
+				<br>
+				<div id="city_top">
+					<p onclick="city(this)" class="city_first">上海</p>			
+					<p onclick="city(this)">北京</p>
+					<p onclick="city(this)">天津</p>
+					<p onclick="city(this)">杭州</p>
+				</div>
+				<div id="city_bottom">
+					<p onclick="city(this)">无锡</p>
+					<p onclick="city(this)">苏州</p>
+					<p onclick="city(this)">广州</p>
+					<p onclick="city(this)">深圳</p>
+				</div>
+				<div id="sure">确定 </div>
+				<div class="switch">*切换城市将清空购物车</div>
+		</div>
+		<div id="Moldova">
+			<img src="../images/Moldova.jpg" alt="">	
+		</div>
+		<div id="Mocha">
+			<h3>Café Mocha</h3>
+			<span>摩卡</span>
+		</div>
+		<ul id="Coffee">
+			<li><img src="../images/Coffee_bean.png" alt="" ><span>耶加雪菲咖啡豆</span></li>
+			<li><img src="../images/Chocolates.png" alt=""><span>比利时巧克力</span></li>
+		</ul>
+		<div id="black">
+			<span>黑白巧克力融合巧克力酱</span>
+		</div>
+		<div id="Specifications">
+			<div class="cations">规格数量选择</div>	 
+			<div class="cations1"><a><img src="../images/right_head.png" alt=""></a></div>	
+		</div>
+		<div id="Reference_resources">
+			<div class="pink"></div>
+				<ul class="Sweetness">
+					<li><img src="../images/Sweetness.png" alt="">&nbsp;&nbsp;参考甜度</li>
+					<li><img src="../images/Sweetness.png" alt=""></li>
+					<li><img src="../images/Sweetness.png" alt=""></li>
+					<li><img src="../images/Sweetness.png" alt=""></li>
+					<li><img src="../images/Sweetness1.png" alt=""></li>
+					<li><img src="../images/Sweetness1.png" alt=""></li>
+				</ul>
+			<div class="Distribution"><img src="../images/motorcycle.png" alt="">&nbsp;&nbsp;配送时间&nbsp;&nbsp;&nbsp;现在订购最早明天 10:00配送.每日最</div>
+			<div class="night">晚配送时间18:30.</div>
+		</div>
+		<div id="In_this_world">
+			<div  class="pink1"></div>
+			<div class="Written_words">/世间有摩卡,就有无尽挣扎/</div>
+
+		</div>
+		<ul class="Chocolate">
+			<li><img src="../images/Coffee_flavor.jpg" alt=""></li>
+			<li><img src="../images/Mocha_advertising.jpg" alt=""></li>
+			<li><img src="../images/research_and_development.jpg" alt=""></li>
+			<li><img src="../images/Mocha_introduction.jpg" alt=""></li>
+			<li><img src="../images/Laboratory.jpg" alt=""></li>
+			<li><img src="../images/Chocolate.jpg" alt=""></li>
+		</ul>
+		<div class="cake_joincart">购物车</div>
+		<div id="app">
+			<div class="cake_cart_input">
+				<router-view></router-view>
+				<h3>商品规格</h3>
+				<router-link to = "/home" class="cake_weight_cart" id='cake_weight_css1' onclick="fun()"><span>1.0</span></router-link>
+				<router-link to = "/nav1" class="cake_weight_cart" id='cake_weight_css2' onclick="fun1()"><span>3.0</span></router-link>
+				<router-link to = "/nav2" class="cake_weight_cart" id='cake_weight_css3' onclick="fun2()"><span>5.0</span></router-link>
+			</div>	
+		</div>			
+	
+	</div>
+	<script>
+		// function fun() {
+		// 	var d1 = document.getElementById("cake_weight_css1");
+		// 	var d2 = document.getElementById("cake_weight_css2");
+		// 	var d3 = document.getElementById("cake_weight_css3");
+		// 	d1.style.border="1px solid black";
+		// 	d1.style.backgroundColor="white";
+		// 	d2.style.border="none";
+		// 	d2.style.backgroundColor="rgb(247,247,247)";
+		// 	d3.style.border="none";
+		// 	d3.style.backgroundColor="rgb(247,247,247)";
+		// }
+		// function fun1() {
+		// 	var d1 = document.getElementById("cake_weight_css1");
+		// 	var d2 = document.getElementById("cake_weight_css2");
+		// 	var d3 = document.getElementById("cake_weight_css3");
+		// 	d2.style.border="1px solid black";
+		// 	d2.style.backgroundColor="white";
+		// 	d1.style.border="none";
+		// 	d1.style.backgroundColor="rgb(247,247,247)";
+		// 	d3.style.border="none";
+		// 	d3.style.backgroundColor="rgb(247,247,247)";
+		// }
+		// function fun2() {
+		// 	var d1 = document.getElementById("cake_weight_css1");
+		// 	var d2 = document.getElementById("cake_weight_css2");
+		// 	var d3 = document.getElementById("cake_weight_css3");
+		// 	d3.style.border="1px solid black";
+		// 	d3.style.backgroundColor="white";
+		// 	d2.style.border="none";
+		// 	d2.style.backgroundColor="rgb(247,247,247)";
+		// 	d1.style.border="none";
+		// 	d1.style.backgroundColor="rgb(247,247,247)";
+		// }
+		var home = {
+			template:"<div class='shop_cake'><span>￥198.00</span><img src='../images/cake_closephoto.png' class='cake_closephoto' /><table><tr><td><img src='../images/cake_sizephoto.png'  class='cake_detailsphoto'/>13x13</td><td class='shop_cake_time'><img src='../images/cake_numberphoto.png'  class='cake_detailsphoto'/>适合3-4人分享</td></tr><tr><td><img src='../images/cake_warephoto.png'  class='cake_detailsphoto'/>含5套餐具</td><td class='shop_cake_time'><img src='../images/cake_timephoto.png' class='cake_detailsphoto'/>须提前6小时预订</td></tr></table><div class='shop_cake_potot'><img src='../images/shop_cake_potot1.jpg' alt='' /></div></div>"
+		}
+		var nav1 = {
+			template:"<div class='shop_cake'><span>￥389.00</span><img src='../images/cake_closephoto.png' class='cake_closephoto' /><table><tr><td><img src='../images/cake_sizephoto.png'  class='cake_detailsphoto'/>23x23</td><td class='shop_cake_time'><img src='../images/cake_numberphoto.png'  class='cake_detailsphoto'/>适合8-10人分享</td></tr><tr><td><img src='../images/cake_warephoto.png'  class='cake_detailsphoto'/>含15套餐具</td><td class='shop_cake_time'><img src='../images/cake_timephoto.png' class='cake_detailsphoto'/>须提前12小时预订</td></tr></table><div class='shop_cake_potot'><img src='../images/shop_cake_potot2.jpg' alt='' /></div></div>"
+		}
+		var nav2 = {
+			template:"<div class='shop_cake'><span>￥598.00</span><img src='../images/cake_closephoto.png' class='cake_closephoto' /><table><tr><td><img src='../images/cake_sizephoto.png'  class='cake_detailsphoto'/>30x30</td><td class='shop_cake_time'><img src='../images/cake_numberphoto.png'  class='cake_detailsphoto'/>适合15-20人分享</td></tr><tr><td><img src='../images/cake_warephoto.png'  class='cake_detailsphoto'/>含20套餐具</td><td class='shop_cake_time'><img src='../images/cake_timephoto.png' class='cake_detailsphoto'/>须提前24小时预订</td></tr></table><div class='shop_cake_potot'><img src='../images/shop_cake_potot3.jpg' alt='' /></div></div>"
+		}
+		var tem = [
+			{path:"/home",component:home},
+			{path:"/nav1",component:nav1},
+			{path:"/nav2",component:nav2},
+		];
+		var router = new VueRouter({
+			routes:tem
+		})
+		var vm = new Vue({
+			el:"#app",
+			router
+		});
+		var cakecart = document.getElementById("app");
+		$("#app").css("margin-top","100px");
+		$(".cake_joincart").click(function(){
+				$("#app").animate({"margin-top":"100px"},500);
+				cakecart.style.display="black";
+		});
+		$(".cake_closephoto").click(function(){
+				$("#app").animate({"margin-top":"550px"},200);
+		});
+	</script>
+</body>
+</html>

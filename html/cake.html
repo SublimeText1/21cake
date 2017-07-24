@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+    <style>
+                *{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{   
+    font-family: "微软雅黑";
+    color: #333;
+}
+a{
+    color: rgb(153,153,153);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.cake_total{
+    width: 100%;
+    /*text-align: center;*/
+    /*min-width: 340px;*/
+    /*border: 1px solid red;*/
+}
+.cake_title{
+    text-align: center;
+   border-bottom: 1px solid rgb(226,226,227); 
+   background-color: rgb(251,249,246);
+}
+.cake_title1{
+    display: inline-block; 
+    /*border: 1px solid red;*/
+    margin-top: 50px;
+    width: 960px;
+    border-bottom: 1px solid rgb(226,226,227); 
+   background-color: rgb(251,249,246);
+    /*height: 50px;*/
+    text-align: center;
+}
+.cake_text_color1{
+    color: rgb(68,40,24);
+    /*border:1px solid black;*/
+}
+        .cake_text_color2{
+            color: rgb(213,191,167);
+        }
+        .cake_weight_color{
+            color: rgb(187,151,114);
+        }
+        .cake_li{
+            width: 47%;
+            float: left;
+        }
+
+        .cake_cart{
+            position: relative;
+            left: 80%;   
+            bottom: 80px;
+        }
+        .cake_cart>img{
+            vertical-align: bottom;
+            display: inline-block;
+        }
+        .cake_yum{
+            margin:8%;
+        }
+        .cake_opacity{
+            opacity: 0.3;
+        }
+        .cake_sellout{
+            /*border:1px solid red;*/
+            color: rgb(68,40,24);
+            position: relative;
+            left: 50%;
+            top: 300px;
+        }
+    </style>
+}
+</head>
+<body>
+
+    <div class="cake_total">
+        <div class="cake_title"></div>
+        <div class="cake_total_list">
+            <ul class="cake_sell">
+            </ul>
+        </div>
+    
+        <div class="cake_title1"></div>
+        <div class="cake_total_list1">
+            <ul class="cake_sell1">
+            </ul>
+        </div>
+    </div>
+ 
+    <script>
+    $.ajax({
+    	url:"../php/zhangxu.php?type=cake",
+        type:"get",
+    	success:function(data){
+    		var obj=JSON.parse(data).data.goodsArr.one.goods;
+    		console.log(obj);
+            var cakeh2 = $("<h2><div class='cake_text_color1'>蛋糕</div><div class='cake_text_color2'>新鲜乳脂奶油蛋糕</div></h2>");
+            $(".cake_title").append(cakeh2);
+
+           
+            for (var i = 0; i <10; i++) {
+                var cake_img = $("<img src='' alt='' />");
+                var cake_weight = $("<span class='cake_weight_color'></span>");
+                var cake_name = $("<h3 class='cake_text_color1'></h3>");
+                var shopcart_photo = $("<img src='../images/shopcart.png' alt='' />")
+                cake_weight.html(obj[i].price+"/"+obj[i].spec);
+                cake_name.html(obj[i].en_name+"<br />"+obj[i].name)
+                cake_img.attr("src",'http://static.21cake.com/'+obj[i].img_url);
+
+                //
+                
+                var cake_yum = $("<div class='cake_yum'></div>");
+                var cake_cart = $("<a href='' class='cake_cart'></a>");
+                var cake_li = $("<li class='cake_li'></li>");
+                var cake_click = $("<a href=''></a>");
+                // cake_weight.append(shopcart_photo);
+                cake_yum.append(cake_img);
+                cake_yum.append(cake_name);
+                cake_yum.append(cake_weight);
+                cake_cart.append(shopcart_photo);
+                cake_click.append(cake_yum);
+                cake_li.append(cake_click);
+                cake_li.append(cake_cart);
+                $(".cake_sell").append(cake_li);
+                //
+            
+            };
+            var cakeh = $("<h2><div class='cake_text_color1 dd'>季节性下线</div><div class='cake_text_color2'>在合适的季节，吃恰当的食物</div></h2>");
+            $(".cake_title1").append(cakeh);
+            for (var j = 40; j <obj.length; j++) {
+                var cake_img1 = $("<img src='' alt='' />");
+                var cake_weight1 = $("<span class='cake_weight_color'></span>");
+                var cake_name1 = $("<h3 class='cake_text_color1'></h3>");
+               
+                cake_weight1.html(obj[j].price+"/"+obj[j].spec);
+                cake_name1.html(obj[j].en_name+"<br />"+obj[j].name)
+                cake_img1.attr("src",'http://static.21cake.com/'+obj[j].img_url);
+
+                //
+                var cake_sellout = $("<span class='cake_sellout'>售罄</span>");
+                var cake_yum1 = $("<div class='cake_yum cake_opacity'></div>");
+                
+                var cake_li1 = $("<li class='cake_li'></li>");
+                var cake_click1 = $("<a href=''></a>");
+                // cake_weight.append(shopcart_photo);
+                cake_yum1.append(cake_img1);
+                cake_yum1.append(cake_name1);
+                cake_yum1.append(cake_weight1);
+                cake_li1.append(cake_sellout);
+                cake_click1.append(cake_yum1);
+                cake_li1.append(cake_click1);
+                $(".cake_sell1").append(cake_li1);
+                //
+            
+            }
+    	}
+    })
+	</script>
+</body>
+</html>

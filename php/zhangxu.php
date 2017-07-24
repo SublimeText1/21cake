@@ -88,7 +88,7 @@
             }
         }, 
         "goodsArr": {
-            "1": {
+            "one": {
                 "name": "蛋糕", 
                 "title": "蛋糕", 
                 "description": "新鲜乳脂奶油蛋糕", 
