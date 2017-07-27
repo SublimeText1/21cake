@@ -87,6 +87,13 @@ header #header_top,header #header_bottom{
 #header_top .top_city{
 	width: 80%;
 } 
+#header_top #show{
+	display: inline-block;
+	background-image: url(../images/address.png);
+	background-repeat: no-repeat;
+	background-size: 13px 16px;
+	width:55px;
+}
 #cake_top img{
 	width:20px;
 	height:20px;
@@ -99,11 +106,6 @@ header #header_top,header #header_bottom{
 }
 #cake_top .address,#cake_top .city{
 	display:block;
-}
-#cake_top .city{
-	width: 13px;
-	height: 15px;
-	display: block;
 }
 #cake_top .address{
 	width: 15px; 
@@ -127,6 +129,7 @@ header #cake_meau{
 	width: 20px;
 	height: 20px;
 }
+
  /*弹出框*/
 #select_city {
 	width:90%;
@@ -190,6 +193,7 @@ footer{
 	height: 160px;
 	max-width: 640px;	 
 	min-width: 320px;
+	margin-left:500px;
 	margin: 0 auto;
 	text-align: center;
 	background: rgb(65,65,65);

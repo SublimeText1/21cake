@@ -113,11 +113,28 @@
 	bottom:0; 
 	z-index: 1000;
 	background: rgb(255,255,255);
-	display: none;
+	box-shadow: 10px 0 30px rgb(242,242,242);
+	/*display: none;*/
 }
 #add_cart{
 	padding-left: 20px;
+	
 }
+#add_picture {
+	/*border: 1px solid red;*/
+	overflow: hidden;
+}
+#add_picture p{
+	float:left;
+}
+#add_picture img{
+	display: block;
+	float:right;
+	width: 18px;
+	height:18px;
+	margin: 20px;
+}
+
 #add_cart #cart_price{
 	font-weight: bold;
 	font-size:15px; 

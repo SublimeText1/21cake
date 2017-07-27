@@ -8,7 +8,6 @@
 }
 #header_box{
 	background:rgb(255,255,255);
-	/*border: 1px solid red;*/
 	margin-bottom: 15px;
 }
 #header_box img{
@@ -17,7 +16,6 @@
 #fruits_cake{
 	display: flex;
 	padding: 5px;
-	/*border: 1px solid red;*/
 }
 #fruits_cake img{
 	 width: 32px;
@@ -34,7 +32,8 @@
 }
 #select_go{
 	overflow:hidden;
-	/*border: 1px solid blue;*/padding: 15px;
+	/*border: 1px solid blue;*/
+	padding: 15px;
 }
 #header_box .num{	
 	float: left;
@@ -44,13 +43,11 @@
 	height:15px;
 	float: right;
 }
-
 /*第二部分*/  
 #details{
 	background:rgb(255,255,255);
 	padding:20px 10px;
 	margin-top: 12px;
-	/*border: 1px solid orange;*/
 }
 #details img{
 	width: auto;
@@ -63,7 +60,6 @@
 #details li{
 	margin-bottom:15px; 
 	overflow: hidden;
-	/*border: 1px solid red;*/
 }
 .sweet_picture{
 	padding-left: 129px;
@@ -72,7 +68,6 @@
 #details span{
 	display: block;
 	vertical-align: top;
-	/*width: 60px;*/
 	text-align: center;
 	margin:0 10px;
 	float:left; 
@@ -80,14 +75,12 @@
 #details li div{
 	width: 100%;
 	float: left;
-	margin-left:-129px;
-	
+	margin-left:-129px; 	
 }
 /*第三部分*/
 #cake_address{
 	background:rgb(255,255,255);
 	margin-top: 12px;
-	/*border: 1px solid yellow;*/
 	padding-left: 15px;
 }
 #cake_address p{
@@ -97,8 +90,6 @@
 #cake_address div{
 	font-size: 12px;
 }
-
-
 #cake_picture {
 	width: 100%;
 	max-width: 640px;	 
@@ -116,6 +107,7 @@
 	margin: 0 auto;
 	height: 60px;
 	position: fixed;
+	z-index: 50000;
 	bottom:0;
 	background: rgb(255,255,255);
 	box-shadow: 0 0 10px rgb(239,239,239);
