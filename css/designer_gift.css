@@ -229,21 +229,18 @@ header #cake_meau{
     display: block;
     overflow: hidden;
 }
-.list-pro-box li .list-pro-content .list-pro-img {
+.list-pro-box li .list-pro-img {
     width: 100%;
 }
-.list-pro-box .list-pro-content h3 {
-    font-size: 13px;
-    line-height: 1.2em;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.size{
+	font-weight: normal;
+	font-size: 13px;
 }
-.list-pro-box li .list-pro-content img {
+.list-pro-box li img {
     width: 100%;
+    height: 176px;
 }
-.list-pro-box .list-pro-content h3 span {
+.list-pro-box h3 span {
     font-size: 12px;
     display: block;
     width: 100%;
@@ -251,24 +248,21 @@ header #cake_meau{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.list-pro-box .list-pro-content span.price {
+.price {
     color: #BB9772;
     display: block;
     margin-top: 5px;
 }
-.list-pro-box .list-pro-content .label {
-    position: absolute;
-    bottom: 68px;
-    left: 0;
-}
-.list-pro-box .list-pro-content .cart-add {
+.list-pro-box .list-box-ul .cart-add {
     display: block;
-    width: 24%;
-    padding: 5%;
-    position: absolute;
-    padding-top: 20px;
-    right: 0;
-    bottom: -3%;
+    width: 25px;
+    height: 25px;
+	margin-left: 140px;
+	margin-top: -20px;
+}
+.list-pro-box .list-box-ul .cart-add>img{
+	width: 100%;
+	height: 25px;
 }
 .lost-bottom {
     height: 72px;

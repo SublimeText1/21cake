@@ -48,9 +48,28 @@ $.ajax({
 		var obj = JSON.parse(data).data.goodsArr[1].goods;
 		console.log(obj);
 		for (var i = 0; i < obj.length; i++) {
+			var li = $("<li class='list-box-li'></li>");
+			var a = $("<a href='' class='list-pro-a'></a>");
 			var img = $("<img src='' alt=''>");
+			var size = $("<h3 class='size'></h3>");
+			var span = $("<span></span>");
+			var price = $("<span class='price'></span>");
+			var span1 = $('<span class="cart-add"></span>');
+			var img1 = $("<img src='' alt=''>");
+			size.html(obj[i].en_name);
+			span.html(obj[i].name);
+			price.html('&yen;'+obj[i].price+'/'+obj[i].spec);
 			img.attr("src",obj[i].img_url);
-			$(".list-pro-img").append(img)
+			img1.attr("src",obj[i].img_urls);
+			a.append(img);
+			a.append(size);
+			a.append(span);
+			a.append(price);
+			li.append(a);
+			span1.append(img1);
+			li.append(span1);
+			$(".list-box-ul").append(li);
 		}
 	}
 })
+// img1.append(span1);li.append(img1);
