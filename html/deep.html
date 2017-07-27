@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/recommend.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/mango.css">
+	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../js/base.js"></script>
+	<title>深爱</title>
+</head>
+<body>
+		<div id="mango_box">
+		<div id="header_box">
+			<img src="../images/deep.png" alt="">
+			<div id="header_first">
+				<h2>Deep Balleys Lovers</h2>
+				<h3> 深爱百利甜情人蛋糕</h3>
+			</div>
+			
+			<div id="fruits_cake">
+				<div> <img src="../images/rose.png" alt="">玫瑰甘露、玫瑰蜜饯</div> 
+				<div> <img src="../images/mang.png" alt="">芒果</div>
+				<br>
+			</div>	
+			<div id="rose">
+				<img src="../images/rose.png" alt="">空运玫瑰花</div>
+			<div id="fruits_word">12年，百万磅新鲜制作送达</div>
+			<div id="select_go">
+				<div class="num">规定数量选择</div>
+				<img src="../images/go.png" alt="">
+			</div>
+		</div>
+		<ul id="mango_latte">
+			<li>组合搭配</li>
+			<li id="latte_picture">
+				<div>
+					<img src="../images/deep.jpg" alt=""> 
+					<i></i>
+              		<h4>深爱百利...</h4>
+				</div>
+				<div>
+					<img src="../images/latte.jpg" alt="" class="a1">
+					<h4 class="gelta"> Latte Gelat</h4> 
+				</div> 
+			</li>
+			<div id="price">
+				<li id="mango_price">
+					<h3>组合价：<span>&yen; 137.00-997.00</h3></span>
+					<p>原价：<span>&yen; 143.00-100，3.00</span></p>
+				</li>
+				<img src="../images/go.png" alt="" id="img">
+			</div>
+			
+		</ul>	
+		<ul id="details">
+				<li> 
+					<img src="../images/sweet1.png" alt="">
+					<span>参考甜度</span>
+					<div>
+						<p class="sweet_picture"> <img src="../images/sweet1.png" alt=""><img src="../images/sweet2.png" alt=""><img src="../images/sweet2.png" alt=""><img src="../images/sweet2.png" alt=""><img src="../images/sweet2.png" alt=""></p>
+					</div>
+				</li>
+				<li> 
+					<img src="../images/dist-time.png" alt="">
+					<span>配送时间</span>
+					<div>
+						<p class="sweet_picture">现在订购最早今天15:30配送每日最晚配送时间18:30</p></div>
+					
+				</li>
+				<li> 
+					<img src="../images/fresh.png" alt="">
+					<span>保鲜条件</span>
+					<div>
+						<p class="sweet_picture">0-4℃保藏10小时，8℃食用为佳</p></div>
+				</li>
+				<li> 
+					<img src="../images/accessories.png" alt="">
+					<span>标准配件</span>
+					<div>
+					<p class="sweet_picture">盒盖内含1把竹勺 </p>
+					</div>
+				</li>
+			</ul>
+		<div id="cake_address">
+			<div>/奶油中调入玫瑰甘露，整体色泽加深/</div>
+			<div>/夹心中增加可咀嚼的玫瑰蜜饯，丰富口感/</div>
+			<div class="mango">当季水果夹心为：芒果</div>
+         </div>       
+			 <div id="cake_picture">
+ 				<div><img src="../images/deep1.jpg" alt=""></div>
+ 				<div><img src="../images/deep2.jpg" alt=""></div>
+ 				<div><img src="../images/deep3.jpg" alt=""></div>
+ 				<div><img src="../images/deep4.jpg" alt=""></div>
+ 				<div><img src="../images/deep5.jpg" alt=""></div>
+ 				<div><img src="../images/deep6.jpg" alt=""></div>	
+			 </div>
+		</div>
+		<div id="cart_fixed">
+			<div>加入购物车</div>
+	</div>
+	</div>
+	<div id="mango_details">
+		<div id="mango_gelato">
+		<div id="details_first">
+			<img src="../images/page.png" alt="" id="back">
+			<h3>请选择合内的商品信息</h3>
+		</div>
+	
+		<div class="details_picture">
+			<img src="../images/deep.png" alt="">
+			<div class="word">
+				<p>深爱百利甜情人蛋糕</p>
+				<p>&yen;296.00-958.00</p>
+				<p id="select">选择商品规格</p>
+			</div>
+		</div>
+		<div class="details_picture">
+			<img src="../images/box.jpg" alt="">
+			<div class="word">
+				<p>Latte Gelato 拿铁冰激凌</p>
+				<p>&yen;39 <span>&yen;45.00</span></p>
+			</div>
+		</div>
+		<div id="details_final">
+			合计：&yen;<h4>307.00</h4>
+			<div>加入购物车</div> 
+		</div>
+	</div>
+	</div>
+	<script>
+			var details = $("#mango_details");
+			details.css("right","-420px");
+			$("#img").click(function() {
+
+				details.animate({"right":"0"},1000);
+			})
+			$("#back").click(function(){
+
+				details.animate({"right":"-420"},1000);
+			})
+	</script>
+</body>
+</html>

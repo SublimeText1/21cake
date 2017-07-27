@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/recommend.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/mango.css">
+	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../js/base.js"></script>
+	<title>芒果慕斯</title>
+</head>
+<body>
+		<div id="header_box">
+			<img src="../images/mango.png" alt="">
+			<div id="fruits_cake">
+				<div> <img src="../images/mang.png" alt="">芒果冻、鲜肉冻、芒果浆慕斯</div>
+			</div>	
+			<div id="fruits_word">大块鲜果肉，于自制芒果酱工艺</div>
+			<div id="select_go">
+				<div class="num">规定数量选择</div>
+				<img src="../images/go.png" alt="">
+			</div>
+		</div>
+		<div id="mango_box">
+		<ul id="mango_latte">
+			<li>组合搭配</li>
+			<li id="latte_picture">
+				<div>
+					<img src="../images/mango_jerry.jpg" alt=""> 
+					<i></i>
+              		<h4>芒果慕斯</h4>
+				</div>
+				<div>
+					<img src="../images/latte.jpg" alt="" class="a1">
+					<h4 class="gelta"> Latte Gelta</h4> 
+				</div> 
+			</li>
+			<div id="price">
+				<li id="mango_price">
+					<h3>组合价：<span>&yen; 237.00-789.00</h3></span>
+					<p>原价：<span>&yen; 243.00-795.00</span></p>
+				</li>
+				<img src="../images/go.png" alt="" id="img">
+			</div>
+			
+		</ul>	
+		<ul id="details">
+				<li> 
+					<img src="../images/sweet1.png" alt="">
+					<span>参考甜度</span>
+					<div>
+						<p class="sweet_picture"> <img src="../images/sweet1.png" alt=""><img src="../images/sweet1.png" alt=""><img src="../images/sweet1.png" alt=""><img src="../images/sweet2.png" alt=""><img src="../images/sweet2.png" alt=""></p>
+					</div>
+				</li>
+				<li> 
+					<img src="../images/dist-time.png" alt="">
+					<span>配送时间</span>
+					<div>
+						<p class="sweet_picture">现在订购最早今天15:30配送每日最晚配送时间18:30</p></div>
+					
+				</li>
+				<li> 
+					<img src="../images/fresh.png" alt="">
+					<span>保鲜条件</span>
+					<div>
+						<p class="sweet_picture">0-4℃保藏10小时，8℃食用为佳</p></div>
+				</li>
+				<li> 
+					<img src="../images/accessories.png" alt="">
+					<span>标准配件</span>
+					<div>
+					<p class="sweet_picture">含标配餐具,可添加巧克力生日牌,不含蜡烛 </p>
+					</div>
+				</li>
+			</ul>
+		<div id="cake_address">
+			<div>/世界公认41个品种的芒果，按四大种群，在不同产地相继成熟 /</div>
+			<div>/为始终采用当季成熟鲜芒，做出理想的芒果慕斯，21cake肯定增加采购成本，按不同标准挑选自然成熟的果实 /</div>
+			<div>/完全在第一时间/</div>
+			<div>From November to next September,Mangoes around the world get to maturi-ty! So before purchasing a mango,check your calendar, then your globe  </div>
+               </div>        
+			 <div id="cake_picture">
+ 				<div><img src="../images/mango.1.jpg" alt=""></div>
+ 				<div><img src="../images/mango.2.jpg" alt=""></div>
+ 				<div><img src="../images/mango.3.jpg" alt=""></div>
+ 				<div><img src="../images/mango.4.png" alt=""></div>
+ 				<div><img src="../images/mango.5.jpg" alt=""></div>
+			 </div>
+		</div>
+	</div>
+	<div id="cart_fixed">
+				<div>加入购物车(&yen;<span>298.00</span>)</div>
+	</div>
+	<div id="mango_details">
+		<div id="mango_gelato">
+		<div id="details_first">
+			<img src="../images/page.png" alt="" id="back">
+			<h3>请选择合内的商品信息</h3>
+		</div>
+	
+		<div class="details_picture">
+			<img src="../images/musi.jpg" alt="">
+			<div class="word">
+				<p>芒果慕斯</p>
+				<p>&yen;198.00-750.00</p>
+				<p id="select">选择商品规格</p>
+			</div>
+		</div>
+		<div class="details_picture">
+			<img src="../images/box.jpg" alt="">
+			<div class="word">
+				<p>Latte Gelato 拿铁冰激凌</p>
+				<p>&yen;39 <span>&yen;45.00</span></p>
+			</div>
+		</div>
+		<div id="details_final">
+			合计：&yen;<h4>237.00</h4>
+			<div>加入购物车</div> 
+		</div>
+	</div>
+	</div>
+	<script>
+			var details = $("#mango_details");
+			details.css("right","-420px");
+			$("#img").click(function() {
+
+				details.animate({"right":"0"},1000);
+			})
+			$("#back").click(function(){
+
+				details.animate({"right":"-420"},1000);
+			})
+	</script>
+</body>
+</html>
