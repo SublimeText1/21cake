@@ -35,6 +35,9 @@ ul,ol{
 	margin-top: 20px;
 	margin-bottom: 50px;
 }
+#app>div{
+	margin-top: 50px;
+}
 .number{
 	width: 50%;
 	border-bottom: 1px solid rgb(213,213,213);
@@ -68,7 +71,7 @@ input::-webkit-input-placeholder{
 	margin-bottom: 10px;
 }
 /*验证码按钮颜色*/
-#sure{
+#sure1{
 	width: 8.5em;
 	height: 30px;
 	background-color: rgb(68,40,24);
