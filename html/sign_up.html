@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src = "../js/vue.js"></script>
+	<script src = "../js/vue.js"></script>
+	<link rel="stylesheet" href="../css/sign_up.css">
+</head>
+<body>
+	<div class="sign_up_box">
+		<div class="second_box">
+			<div class="sign_up_word">
+				<p>用户注册</p>
+			</div>
+			<form action="">
+				<ul class="input_list">
+					<li>
+						<input type="text" placeholder="输入手机号码" maxlength="11">
+					</li>
+					<li>
+						<input type="password" placeholder="密码：8～20字符，需同时包含英文和数字" maxlength="20">
+					</li>
+					<li>
+						<input type="password" placeholder="确认密码" maxlength="20">
+					</li>
+					<li>
+						<input type="text" placeholder="请输入图片字符" class="pwd">
+						<div id="login" onclick="show()"></div>
+					</li>
+					<li>
+						<input type="text" placeholder="输入手机验证码" class="pwd">
+						<input type="button" value="点击获取验证码" id="sure" onclick="fun(this)">
+					</li>	
+				</ul>
+				<input type="button" value="注册" id="sign_up"></input>
+				<div class="reader">
+					<input type="checkbox" name="agree" checked="" id="reader_finish">
+					<label for="reader_finish"> 已阅读并同意</label>
+					<a href="">21客会员协议</a>和
+					<a href="">隐私保护政策</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="../js/phonecode.js"></script>
+	<script src="../js/code.js"></script>
+</body>
+</html>

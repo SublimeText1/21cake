@@ -1,0 +1,130 @@
+#mocha_box{
+	width: 100%;
+	max-width: 640px;	 
+	min-width: 320px;
+	margin: 0 auto;
+	background-color: rgb(246,246,246);
+	color: rgb(68,40,24);
+}
+#header_box{
+	background:rgb(255,255,255);
+	/*border: 1px solid red;*/
+	margin-bottom: 15px;
+}
+#header_box img{
+	width: 100%;
+}
+#fruits_cake{
+	display: flex;
+	/*padding: 10px;*/
+	border: 1px solid red;
+}
+#fruits_cake img{
+	 width: 32px;
+	 height: 32px;
+	 display: inline-block;
+	 vertical-align: middle; 
+	 margin-left: 10px;
+}
+#fruits_word{
+	padding: 15px;
+	margin-left: 10px;
+	color: rgb(150,150,150);
+	border-bottom:1px solid rgb(238,238,238); 
+}
+#select_go{
+	overflow:hidden;
+	/*border: 1px solid blue;*/padding: 15px;
+}
+#header_box .num{	
+	float: left;
+}
+#select_go img{
+	width: 15px;
+	height:15px;
+	float: right;
+}
+
+/*第二部分*/  
+#details{
+	background:rgb(255,255,255);
+	padding:20px 10px;
+	margin-top: 12px;
+	/*border: 1px solid orange;*/
+}
+#details img{
+	width: auto;
+	height: 15px;
+	display: block;
+	vertical-align: top;
+	float:left;
+	margin-left: 20px;
+}
+#details li{
+	margin-bottom:15px; 
+	overflow: hidden;
+	/*border: 1px solid red;*/
+}
+.sweet_picture{
+	padding-left: 129px;
+	padding-right: 15px;
+}
+#details span{
+	display: block;
+	vertical-align: top;
+	/*width: 60px;*/
+	text-align: center;
+	margin:0 10px;
+	float:left; 
+}
+#details li div{
+	width: 100%;
+	float: left;
+	margin-left:-129px;
+	
+}
+/*第三部分*/
+#cake_address{
+	background:rgb(255,255,255);
+	margin-top: 12px;
+	/*border: 1px solid yellow;*/
+	padding-left: 15px;
+}
+#cake_address p{
+	color: red;
+}
+#cake_address div{
+	font-size: 12px;
+}
+
+#cake_picture {
+	width: 100%;
+	max-width: 640px;	 
+	min-width: 320px;
+	margin: 0 auto;
+}
+#cake_picture img{
+	width: 100%;
+	display: block;
+}
+#cart_fixed{
+	width: 100%;
+	max-width: 640px;	 
+	min-width: 320px;
+	margin: 0 auto;
+	height: 60px;
+	position: fixed;
+	bottom:0;
+	background: rgb(255,255,255);
+	box-shadow: 0 0 10px rgb(239,239,239);
+}
+#cart_fixed div{
+	width: 200px;
+	height: 40px;
+	background: rgb(68,40,24);
+	color: white;
+	margin:auto;
+	margin-top:10px; 
+	text-align: center;
+	line-height: 40px;
+}

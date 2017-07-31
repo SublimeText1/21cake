@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <style>
+  *{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{   
+    font-family: "微软雅黑";
+    color: #333;
+}
+a{
+    color: rgb(153,153,153);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.cake_total{
+    width: 100%;
+}
+.cake_title{
+    text-align: center;
+   border-bottom: 1px solid rgb(226,226,227); 
+   background-color: rgb(251,249,246);
+}
+.cake_title1,.cake_title2{
+    display: inline-block;
+    margin-top: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgb(226,226,227); 
+   background-color: rgb(251,249,246);
+    text-align: center;
+}
+.cake_text_color1{
+    color: rgb(68,40,24);
+}
+.cake_text_size{
+    font-size: 0.75em;
+    height: 35px;
+    overflow: hidden;
+}
+        .cake_text_color2{
+            color: rgb(213,191,167);
+        }
+        .cake_weight_color{
+            color: rgb(187,151,114);
+        }
+        .cake_sell,.cake_sell1,.cake_sell2{
+            display: fixed;
+            width: 100%;
+        }
+        .cake_li{
+            width: 47%;
+            float: left;
+        }
+        .cake_cart{
+            position: relative;
+            left: 80%;   
+            bottom: 30px;
+        }
+        .cake_cart>img{
+            vertical-align: bottom;
+            display: inline-block;
+        }
+        .cake_yum{
+            margin:8%;
+        }
+        /*.cake_opacity{
+            opacity: 0.3;
+        }*/
+      /*  .cake_sellout{
+            color: rgb(68,40,24);
+            position: relative;
+            left: 45%;
+            top: 100px;
+        }*/
+        .cake_inner1{
+            width: 100%;
+        }
+        .cake_inner2{
+            width: 10%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="cake_total">
+        <div class="cake_title"></div>
+        <div class="cake_total_list">
+            <ul class="cake_sell">
+            </ul>
+        </div>
+    
+        <div class="cake_title1"></div>
+        <div class="cake_total_list1">
+            <ul class="cake_sell1">
+            </ul>
+        </div>
+        <div class="cake_title2"></div>
+        <div class="cake_total_list2">
+            <ul class="cake_sell2">
+            </ul>
+        </div>
+    </div>
+ 
+    <script>
+    $.ajax({
+        url:"../php/zhangxu.php?type=tea",
+        type:"get",
+        success:function(data){
+            var obj=JSON.parse(data).data.goodsArr.three.goods;
+            var obj1=JSON.parse(data).data.goodsArr.two.goods;
+            var obj2=JSON.parse(data).data.goodsArr.four.goods;
+            console.log(obj);
+            var cakeh2 = $("<h5><div class='cake_text_color1'>冰淇淋</div><div class='cake_text_color2'>10天生命的意式杰拉朵冰淇淋</div></h5>");
+            $(".cake_title").append(cakeh2);
+
+           
+            for (var i = 0; i <obj.length; i++) {
+                var cake_img = $("<img src='' alt='' class='cake_inner1' />");
+                var cake_weight = $("<span class='cake_weight_color'></span>");
+                var cake_name = $("<p class='cake_text_color1 cake_text_size'></p>");
+                var shopcart_photo = $("<img src='../images/shopcart.png' alt='' class='cake_inner2' />")
+                cake_weight.html(obj[i].price+"/"+obj[i].spec);
+                cake_name.html(obj[i].en_name+"<br />"+obj[i].name)
+                cake_img.attr("src",'http://static.21cake.com/'+obj[i].img_url);
+
+                //
+                
+                var cake_yum = $("<div class='cake_yum'></div>");
+                var cake_cart = $("<a href='' class='cake_cart'></a>");
+                var cake_li = $("<li class='cake_li'></li>");
+                var cake_click = $("<a href=''></a>");
+                // cake_weight.append(shopcart_photo);
+                cake_yum.append(cake_img);
+                cake_yum.append(cake_name);
+                cake_yum.append(cake_weight);
+                cake_cart.append(shopcart_photo);
+                cake_click.append(cake_yum);
+                cake_li.append(cake_click);
+                cake_li.append(cake_cart);
+                $(".cake_sell").append(cake_li);
+                //
+            
+            };
+            var cakeh = $("<h5><div class='cake_text_color1 dd'>常温蛋糕</div><div class='cake_text_color2'>方便携带，可配送至全国</div></h5>");
+            $(".cake_title1").append(cakeh);
+            for (var j = 0; j <obj1.length; j++) {
+                var cake_img1 = $("<img src='' alt=''  class='cake_inner1' />");
+                var cake_weight1 = $("<span class='cake_weight_color'></span>");
+                var cake_name1 = $("<p class='cake_text_color1 cake_text_size'></p>");
+               var shopcart_photo1 = $("<img src='../images/shopcart.png' alt='' class='cake_inner2' />")
+                cake_weight1.html(obj1[j].price+"/"+obj1[j].spec);
+                cake_name1.html(obj1[j].en_name+"<br />"+obj1[j].name)
+                cake_img1.attr("src",'http://static.21cake.com/'+obj1[j].img_url);
+                var cake_yum1 = $("<div class='cake_yum cake_opacity'></div>");
+                var cake_cart1 = $("<a href='' class='cake_cart'></a>");
+                var cake_li1 = $("<li class='cake_li'></li>");
+                var cake_click1 = $("<a href=''></a>");
+                cake_yum1.append(cake_img1);
+                cake_yum1.append(cake_name1);
+                cake_yum1.append(cake_weight1);
+                cake_cart1.append(shopcart_photo1);
+                cake_click1.append(cake_yum1);
+                cake_li1.append(cake_click1);
+                cake_li1.append(cake_cart1);
+                $(".cake_sell1").append(cake_li1);
+            };
+             var cakeh = $("<h5><div class='cake_text_color1 dd'>咖啡</div><div class='cake_text_color2'>拉尔咖啡</div></h5>");
+            $(".cake_title2").append(cakeh);
+            for (var k = 0; k <obj2.length; k++) {
+                var cake_img2 = $("<img src='' alt=''  class='cake_inner1' />");
+                var cake_weight2 = $("<span class='cake_weight_color'></span>");
+                var cake_name2 = $("<p class='cake_text_color1 cake_text_size'></p>");
+               var shopcart_photo2 = $("<img src='../images/shopcart.png' alt='' class='cake_inner2' />")
+                cake_weight2.html(obj2[k].price+"/"+obj2[k].spec);
+                cake_name2.html(obj2[k].en_name+"<br />"+obj2[k].name)
+                cake_img2.attr("src",'http://static.21cake.com/'+obj2[k].img_url);
+                var cake_yum2 = $("<div class='cake_yum cake_opacity'></div>");
+                var cake_cart2 = $("<a href='' class='cake_cart'></a>");
+                var cake_li2 = $("<li class='cake_li'></li>");
+                var cake_click2 = $("<a href=''></a>");
+                cake_yum2.append(cake_img2);
+                cake_yum2.append(cake_name2);
+                cake_yum2.append(cake_weight2);
+                cake_cart2.append(shopcart_photo2);
+                cake_click2.append(cake_yum2);
+                cake_li2.append(cake_click2);
+                cake_li2.append(cake_cart2);
+                $(".cake_sell2").append(cake_li2);
+            }
+        }
+    })
+    </script>
+</body>
+</html>

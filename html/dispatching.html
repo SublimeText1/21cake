@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全国配送</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/dispatching.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/dispatching.js"></script>
+</head>
+<body>
+	<div class="dispatching_box">
+		<div class="dispatching_picture">
+			<img src="../images/dispatching.jpg" alt="" class="top_picture">
+		</div>
+		<div class="order">
+			<ul class="order_detail">
+				<li>
+					<div class="left_detail">
+						<a href="Brazil_coffee.html">
+							<div class="detail_img">
+								<img src="../images/order_left.jpg" alt="">
+							</div>
+							<p>巴西喜拉多咖啡2盒</p>
+							<p style="color: #bb9772;">￥200.00/份</p>
+						</a>
+						<button id="order_button" onclick="order_sure()">订购</button>
+						<div class="order_buy">
+							<input class="min" type="button" value="-">
+							<input class="text_box" type="text" value="0">
+							<input class="add" type="button" value="+">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="left_detail">
+						<a href="Yega_coffee.html">
+							<div class="detail_img">
+								<img src="../images/order_right.jpg" alt="">
+							</div>
+							<p>耶加雪菲咖啡2盒</p>
+							<p style="color: #bb9772;">￥200.00/份</p>
+						</a>
+						<button id="order_button_two" onclick="order_sure_two()">订购</button>
+						<div class="order_buy_two">
+							<input class="min_two" type="button" value="-">
+							<input class="text_box_two" type="text" value="0">
+							<input class="add" type="button" value="+">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="left_detail">
+						<a href="Yega_brazil.html">
+							<div class="detail_img">
+								<img src="../images/order_bottom.jpg" alt="">
+							</div>
+							<p>耶加雪菲和巴西喜拉多</p>
+							<p style="color: #bb9772;">￥200.00/份</p>
+						</a>
+						<button id="order_button_three" onclick="order_sure_three()">订购</button>
+						<div class="order_buy_three">
+							<input class="min_three" type="button" value="-">
+							<input class="text_box_three" type="text" value="0">
+							<input class="add" type="button" value="+">
+						</div>
+					</div>
+				</li>
+			</ul>
+			<p style="padding: 0 20px;padding-bottom: 20px;">
+				发货时间：参考产品详情页说明<br>
+				配送范围：北京、上海、广东、江苏、浙江、天津、安徽、辽宁、山东、河北
+			</p>
+		</div>
+		<div class="place-order-bottom">
+			<a href="num_password.html" class="place-order-but">去结算</a>
+			<div class="pay-money">
+				<div>¥
+					<span id="total">0.00</span>
+					<span>商品</span>
+				</div>
+				<div class="pay-money-plus">+</div>
+				<div>¥
+					<span>0.00</span>
+					<span>配送费</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

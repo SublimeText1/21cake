@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*去掉点击高亮效果-主要针对移动端*/
+	-webkit-tap-highlight-color:transparent;
+	/*设置元素宽高计算方式*/
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/*设置统一的字体*/
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #333;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+/*重置input样式*/
+input{
+	border:none;
+	/*去掉选中状态下的高亮效果*/
+	outline: none;
+	/*清除移动端默认的表单样式*/
+	-webkit-appearance:none;
+}
+ul,li{
+	list-style: none;
+}
+.Season_star{
+	width:100%;
+}
+.Season_star>li>img{
+	width:100%;
+}
+.Season_star>.l1>img{
+	width:15%;
+	margin-left:133px;
+
+}
+.Season_star>li>.Huairou{
+		
+		height:0px;		
+	
+}
+.Season_star>li>.Arrow1{
+	width:50px;
+	height:50px;
+	display: block;
+	margin:0 auto;
+
+}
+.Yichun1,.Thailand{
+	width:100%;
+}
+.Yichun1>li>img,.Thailand>li>img{
+	width:100%;
+}
+.Yichun1>li>.Yichun2,.Thailand>li>.Thailand2{
+	height:0px;
+}
+.Yichun1>li>.Arrow,.Thailand>li>.Arrow3{
+	width:50px;
+	height:50px;
+	display: block;
+	margin:0 auto;
+
+}
