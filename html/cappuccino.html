@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/recommend.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/mango.css">
+	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../js/base.js"></script>
+	<title>新卡</title>
+</head>
+<body>
+		<div id="all">
+	  <div id="cake_box">
+		<header>
+			<div id="cake_top">
+				<ul id="header_top">
+					<li class="top_city" >
+					<img onclick="fun(this)"  src="../images/top.png"></li>
+					<li class="top_city"><img src="../images/back.png"></li>
+					<li  onclick="fun2()">
+					<span id="show">上海</span>
+						</li>
+					<li id="top_address"><img  src="../images/cart.png" class="address"></li>
+				</ul>
+			</div>
+			<div id="cake_meau">
+				<ul id="header_bottom">
+					<li><img src="../images/home.png" alt=""> <br>首页</li>
+					<li><img src="../images/menu.png" alt=""><br>分类</li>
+					<li><img src="../images/person.png" alt=""><br>个人</li>
+				</ul> 
+			</div>
+			
+		</header>
+		<footer>
+			<ul id="footer_bottom">
+				<li>下载APP</li>
+				<li>联系我们</li>
+				<li>全部功告</li>
+			</ul>
+			<p>Copyrigh&copy;蛋糕官网商城 2007-2017,<br>
+			版本所有京ICP备14006254号-1 <br>
+			网站注册名称：北京廿一客食品有限公司
+			</p>
+		</footer>
+		</div>
+		<div id="select_city">
+				<div id="word">选择城市</div>
+				<br>
+				<div id="city_top">
+					<p onclick="city(this)" class="city_first">上海</p>			
+					<p onclick="city(this)">北京</p>
+					<p onclick="city(this)">天津</p>
+					<p onclick="city(this)">杭州</p>
+				</div>
+				<div id="city_bottom">
+					<p onclick="city(this)">无锡</p>
+					<p onclick="city(this)">苏州</p>
+					<p onclick="city(this)">广州</p>
+					<p onclick="city(this)">深圳</p>
+				</div>
+				<div id="sure">确定 </div>
+				<div class="switch">*切换城市将清空购物车</div>
+		</div>
+		</div>
+		<div id="big" onclick="big()"></div>	
+		<div id="mango_box">
+		<div id="header_box">
+			<img src="../images/cappuccino.png" alt="">
+			<div id="fruits_cake">
+				<div> <img src="../images/coffe.png" alt="">咖啡酒</div>
+				<div> <img src="../images/micon.png" alt="">精品 咖啡豆</div>
+			</div>	
+			<div id="fruits_word">低温乳汁奶油冷萃耶加雪菲</div>
+			<div id="select_go">
+				<div class="num">规定数量选择</div>
+				<img src="../images/go.png" alt="">
+			</div>
+		</div>
+		<ul id="mango_latte">
+			<li>组合搭配</li>
+			<li id="latte_picture">
+				<div>
+					<img src="../images/xinka.jpg" alt=""> 
+					<i></i>
+              		<h4>新卡</h4>
+				</div>
+				<div>
+					<img src="../images/latte.jpg" alt="" class="a1">
+					<h4 class="gelta"> Latte Gelta</h4> 
+				</div> 
+			</li>
+			<div id="price">
+				<li id="mango_price">
+					<h3>组合价：<span>&yen; 137.00-997.00</h3></span>
+					<p>原价：<span>&yen; 143.00-100，3.00</span></p>
+				</li>
+				<img src="../images/go.png" alt="" id="img">
+			</div>
+			
+		</ul>	
+		<ul id="details">
+				<li> 
+					<img src="../images/sweet1.png" alt="">
+					<span>参考甜度</span>
+					<div>
+						<p class="sweet_picture"> <img src="../images/sweet1.png" alt=""><img src="../images/sweet1.png" alt=""><img src="../images/sweet1.png" alt=""><img src="../images/sweet2.png" alt=""><img src="../images/sweet2.png" alt=""></p>
+					</div>
+				</li>
+				<li> 
+					<img src="../images/dist-time.png" alt="">
+					<span>配送时间</span>
+					<div>
+						<p class="sweet_picture">现在订购最早今天15:30配送每日最晚配送时间18:30</p></div>
+					
+				</li>
+				<li> 
+					<img src="../images/fresh.png" alt="">
+					<span>保鲜条件</span>
+					<div>
+						<p class="sweet_picture">0-4℃保藏10小时，8℃食用为佳</p></div>
+				</li>
+				<li> 
+					<img src="../images/accessories.png" alt="">
+					<span>标准配件</span>
+					<div>
+					<p class="sweet_picture">含标配餐具,可添加巧克力生日牌,不含蜡烛 </p>
+					</div>
+				</li>
+			</ul>
+		<div id="cake_address">
+			<div>/低温乳汁奶油冷萃耶加雪菲/</div>
+			<div>/配马达加斯加香草威风/</div>
+               </div>        
+			 <div id="cake_picture">
+ 				<div><img src="../images/cappuccino1.jpg" alt=""></div>
+ 				<div><img src="../images/cappuccino2.jpg" alt=""></div>
+ 				<div><img src="../images/cappuccino3.jpg" alt=""></div>
+ 				<div><img src="../images/cappuccino4.jpg" alt=""></div>
+ 				<div><img src="../images/cappuccino5.jpg" alt=""></div>
+ 				
+			 </div>
+		</div>
+	</div>
+	<div id="cart_fixed">
+				<div>加入购物车(&yen;<span>298.00</span>)</div>
+	</div>
+	<div id="mango_details">
+		<div id="mango_gelato">
+		<div id="details_first">
+			<img src="../images/page.png" alt="" id="back">
+			<h3>请选择合内的商品信息</h3>
+		</div>
+	
+		<div class="details_picture">
+			<img src="../images/xinka.jpg" alt="">
+			<div class="word">
+				<p>新卡</p>
+				<p>&yen;98.00-958.00</p>
+				<p id="select">选择商品规格</p>
+			</div>
+		</div>
+		<div class="details_picture">
+			<img src="../images/box.jpg" alt="">
+			<div class="word">
+				<p>Latte Gelato 拿铁冰激凌</p>
+				<p>&yen;39 <span>&yen;45.00</span></p>
+			</div>
+		</div>
+		<div id="details_final">
+			合计：&yen;<h4>237.00</h4>
+			<div>加入购物车</div> 
+		</div>
+	</div>
+	</div>
+	<script>
+			var details = $("#mango_details");
+			details.css("right","-420px");
+			$("#img").click(function() {
+
+				details.animate({"right":"0"},1000);
+			})
+			$("#back").click(function(){
+
+				details.animate({"right":"-420"},1000);
+			})
+	</script>
+</body>
+</html>

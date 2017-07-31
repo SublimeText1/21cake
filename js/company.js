@@ -1,4 +1,4 @@
-$("#sure").validate({
+$("#ofcourse").validate({
 	errorClass: "invalid",
 	rules:{
 		companyName:"required",

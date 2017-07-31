@@ -34,7 +34,8 @@
 }
 #select_go{
 	overflow:hidden;
-	/*border: 1px solid blue;*/padding: 15px;
+	border: 1px solid blue;
+	padding: 15px;
 }
 #header_box .num{	
 	float: left;
@@ -47,6 +48,10 @@
 
 /*第二部分*/  
 #details{
+	width: 100%;
+	max-width: 640px;	 
+	min-width: 320px;
+	margin: 0 auto;
 	background:rgb(255,255,255);
 	padding:20px 10px;
 	margin-top: 12px;
@@ -90,13 +95,9 @@
 	/*border: 1px solid yellow;*/
 	padding-left: 15px;
 }
-#cake_address p{
-	color: red;
-}
 #cake_address div{
 	font-size: 12px;
 }
-
 #cake_picture {
 	width: 100%;
 	max-width: 640px;	 
@@ -107,24 +108,5 @@
 	width: 100%;
 	display: block;
 }
-#cart_fixed{
-	width: 100%;
-	max-width: 640px;	 
-	min-width: 320px;
-	margin: 0 auto;
-	height: 60px;
-	position: fixed;
-	bottom:0;
-	background: rgb(255,255,255);
-	box-shadow: 0 0 10px rgb(239,239,239);
-}
-#cart_fixed div{
-	width: 200px;
-	height: 40px;
-	background: rgb(68,40,24);
-	color: white;
-	margin:auto;
-	margin-top:10px; 
-	text-align: center;
-	line-height: 40px;
-}
+
+
