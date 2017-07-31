@@ -13,17 +13,18 @@ function fun(ele){
 		function fun2(){
 			var main=$("#cake_box");
 			var small=$("#select_city");
+			var big = $("#big");
 		if (small.css("display") =="none"){
 				small.css("display","block");
-				main.css("opacity","0.3");
+				big.css("display","block");
 				// main.css("background","yellow");
 				// small.css("display","block");
 			}else{
 				small.css("display","none");
-			    main.css("opacity","1");
 			}
 		}
 		 function city(ntn){
+		 	var big = $("#big");
 		 	var sure= $("#sure");
 		 	var main=$("#cake_box");
 		 	var context =$("#select_city");
@@ -34,10 +35,17 @@ function fun(ele){
 		 	$("#sure").click(function(){
 		 		$("#show").text($(ntn).text());
 		 		context.css("display","none");
-		 		main.css("opacity","1");
-		 	})						
+		 		big.css("display","none");
+		 		
+		 	})	
 			} 
+			function big(){
+				var small=$("#select_city");
+				var big = $("#big");
+				small.css("display","none");
+				big.css("display","none");
 
+			}				
 
 
 
